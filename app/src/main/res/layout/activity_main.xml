@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.skiline11.snake.MainActivity">
+
+    <com.example.skiline11.snake.views.SnakeView
+        android:id="@+id/snakeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.skiline11.snake.views.ResultView
+        android:id="@+id/resultView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result" />
+
+    <TextView
+        android:id="@+id/MaxResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MaxResult" />
+
+    <Button
+        android:id="@+id/RestartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart - Dzidziuś Miś stworzył tą aplikację :-)"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+</android.support.constraint.ConstraintLayout>
